@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 56323795456406161}
   - component: {fileID: 8904750122004137161}
   - component: {fileID: 4320570657224850890}
+  - component: {fileID: 8590447780908096192}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -155,7 +156,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -167,3 +168,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &8590447780908096192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1380367743711604929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 302b154c7cb93604383e4669dcbc38c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WavePathfinding
+  wave: {fileID: 11400000, guid: 638396e1589f2eb439640c44d1453243, type: 2}
