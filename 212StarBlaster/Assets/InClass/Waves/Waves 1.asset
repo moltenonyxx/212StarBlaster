@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Waves 1
   m_EditorClassIdentifier: Assembly-CSharp::WaveSO
   pathPrefab: {fileID: 8606188983654987842, guid: cf4024a499d34e04c9e13f8929a9287a, type: 3}
-  enemySpeed: 5
+  enemySpeed: 3
