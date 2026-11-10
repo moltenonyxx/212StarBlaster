@@ -20,6 +20,10 @@ public class PlayerMovement : MonoBehaviour
         moveAction = InputSystem.actions.FindAction("Move");
 
         InitBounds();
+
+        string[] languages = new string[5];
+        languages[4] = "c#";
+        print(languages[4]);
     }
 
     void Update()
