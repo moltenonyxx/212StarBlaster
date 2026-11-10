@@ -6,6 +6,9 @@ public class WaveConfigSO : ScriptableObject
     [SerializeField] GameObject[] enemyPrefabs;
     [SerializeField] Transform pathPrefabs;
     [SerializeField] float enemyMoveSpeed = 5f;
+    [SerializeField] float timeBetweenEnemySpawns = 1f;
+    [SerializeField] float enemySpawnVarience = 0f;
+    [SerializeField] float minSpawnTime = 0.2f;
 
     public int GetEnemyCount()
     {
@@ -36,5 +39,14 @@ public class WaveConfigSO : ScriptableObject
         }
         
         return waypoints;
+    }
+
+    public float GetRandomEnemySpawnTime()
+    {
+        float spawnTime = Random.Range(timeBetweenEnemySpawns - enemySpawnVarience,
+            timeBetweenEnemySpawns + enemySpawnVarience);
+
+        spawnTime = Mathf.Clamp(spawnTime, minSpawnTime, float.MaxValue);
+        return spawnTime;
     }
 }
